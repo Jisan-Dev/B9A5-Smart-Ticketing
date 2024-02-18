@@ -83,29 +83,31 @@
         </div>
       </div>
     </header>
-    <main class="xl:max-w-[81.25%] max-w-[96%] mx-auto">
+    <main>
       <!-- hero -->
-      <section
-        class="min-h-[82vh] flex items-center justify-center bg-blend-multiply bg-gray-300 bg-[url('/assets/images/banner.png')] bg-no-repeat bg-cover bg-center rounded-[32px]">
-        <div class="hero-content text-center">
-          <div class="leading-none">
-            <h1 class="text-white font-extrabold text-[64px] tracking-tight">
-              End-to-End Travel with <br /><span class="text-primary-700">P Paribahan</span>
-            </h1>
-            <p class="py-6 max-w-[690px] text-white leading-normal">
-              Yes, you can run unit tests and view the results directly within the app. The integrated
-              testing features allow for a streamlined .
-            </p>
-            <button
-              class="bg-primary-700 text-base-black text-xl font-bold border-none px-8 py-5 rounded-xl">
-              Buy Tickets
-            </button>
+      <section class="xl:max-w-[81.25%] max-w-[96%] mx-auto">
+        <div
+          class="min-h-[82vh] flex items-center justify-center bg-blend-multiply bg-gray-300 bg-[url('/assets/images/banner.png')] bg-no-repeat bg-cover bg-center rounded-[2rem]">
+          <div class="hero-content text-center">
+            <div class="leading-none">
+              <h1 class="text-white font-extrabold text-[4rem] tracking-tight">
+                End-to-End Travel with <br /><span class="text-primary-700">P Paribahan</span>
+              </h1>
+              <p class="py-6 max-w-[43.125rem] text-white leading-normal">
+                Yes, you can run unit tests and view the results directly within the app. The integrated
+                testing features allow for a streamlined .
+              </p>
+              <button
+                class="bg-primary-700 text-base-black text-xl font-bold border-none px-8 py-5 rounded-xl">
+                Buy Tickets
+              </button>
+            </div>
           </div>
         </div>
       </section>
 
       <!-- Best offers / coupon info -->
-      <section>
+      <section class="xl:max-w-[81.25%] max-w-[96%] mx-auto">
         <h2 class="text-center text-gray-950 text-[40px] font-bold mt-28">Best offers for you</h2>
         <!-- new15 -->
         <div class="flex gap-6 my-8">
@@ -153,7 +155,7 @@
 
       <!-- Main ticketing section -->
       <section
-        class="bg-[#F7F8F8] min-h-screen rounded-tl-[88px] rounded-tr-[88px] border-t-2 border-primary-700 mt-[140px]">
+        class="bg-[#F7F8F8] min-h-screen rounded-tl-[88px] rounded-tr-[88px] border-t-2 border-primary-700 mt-[140px] px-[135px]">
         <header class="text-center max-w-[736px] mx-auto mt-[120px]">
           <h2 class="text-base-black text-[40px] font-bold">P.H Paribahan</h2>
           <p>
@@ -161,6 +163,67 @@
             testing features allow for a streamlined .
           </p>
         </header>
+        <main>
+          <div class="bg-white px-8 flex rounded-3xl">
+            <div id="first-col">
+              <div class="flex gap-4 py-8">
+                <img src="assets/images/bus-logo.png" class="object-contain" alt="" />
+                <div>
+                  <h2 class="text-[32px] font-bold text-base-black">Greenline Paribahan</h2>
+                  <p class="text-base-black text-opacity-60 text-lg font-normal">
+                    Coach-009-WEB ! AC_Business
+                  </p>
+                </div>
+                <div class="flex-1 relative">
+                  <a
+                    class="bg-[rgba(29,209,0,0.1)] text-primary-700 text-sm sm:text-[20px] font-bold py-4 px-[30px] cursor-pointer rounded-xl flex gap-2 items-center absolute top-0 right-0">
+                    <img src="assets/images/seat-green.png" alt="empty seat icon" class="w-6 h-6" />
+                    <p><span id="remainingSeats-count">8</span> seats left</p>
+                  </a>
+                </div>
+              </div>
+
+              <div class="bg-stone-50 rounded-3xl p-8">
+                <div
+                  class="flex justify-between border-b border-gray-950 border-opacity-20 border-dashed pb-6">
+                  <span class="text-base-black text-opacity-60 text-lg font-semibold">Route</span>
+                  <span class="text-base-black text-lg font-semibold">Dhaka - Sylhet</span>
+                </div>
+                <div
+                  class="flex justify-between border-b border-gray-950 border-opacity-20 border-dashed pb-6 pt-6">
+                  <span class="text-base-black text-opacity-60 text-lg font-semibold"
+                    >Departure Time</span
+                  >
+                  <span class="text-base-black text-lg font-semibold">9:00 PM</span>
+                </div>
+                <div class="mt-6 font-[inter]">
+                  <span
+                    class="p-5 bg-base-black bg-opacity-5 rounded-xl text-opacity-80 text-base-black text-base font-medium"
+                    >Boarding Point - Laxmipur</span
+                  >
+                  <span
+                    class="p-5 bg-base-black bg-opacity-5 rounded-xl ml-4 text-opacity-80 text-base-black text-base font-medium"
+                    >Dropping Point - Bogura</span
+                  >
+                  <span
+                    class="p-5 bg-base-black bg-opacity-5 rounded-xl ml-4 text-opacity-80 text-base-black text-base font-medium"
+                    >Est. Time - 11 Hour</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- 2nd col -->
+            <img src="assets/images/info-devider.png" class="ml-4" alt="info-divider" />
+
+            <!-- 3rd col -->
+            <div class="flex flex-col items-center justify-center">
+              <img src="assets/images/fare.png" alt="" />
+              <p class="text-[32px] font-bold leading-10 text-base-black">550 Taka</p>
+              <p class="text-base-black text-opacity-60 text-2xl font-semibold leading-10">Per Seat</p>
+            </div>
+          </div>
+        </main>
       </section>
     </main>
   </body>
