@@ -37,5 +37,51 @@
       }
     </style>
   </head>
-  <body class="font-raleway"></body>
+  <body class="font-raleway">
+    <header class="xl:max-w-[81.25%] max-w-[96%] mx-auto lg:mb-5 lg:pt-5">
+      <div class="navbar px-0 bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a class="text-red-600">Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Destination</a></li>
+              <li><a>Search</a></li>
+            </ul>
+          </div>
+          <a class="text-4xl sm:text-4xl font-extrabold relative leading-normal">P-Ticket</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-base font-medium">
+            <li><a class="text-primary-700">Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Destination</a></li>
+            <li><a>Search</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a
+            class="bg-[rgba(29,209,0,0.1)] text-primary-700 text-sm sm:text-[20px] font-bold py-4 px-[30px] cursor-pointer border-[1px] border-[rgba(29,209,0,0.40)] rounded-xl flex gap-2 items-center">
+            <span>Bus</span> <img src="assets/images/bus-icon.png" alt="bus icon" class="w-6 h-6" />
+          </a>
+        </div>
+      </div>
+    </header>
+  </body>
 </html>
