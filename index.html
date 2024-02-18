@@ -224,7 +224,94 @@
             </div>
           </div>
         </main>
+
+        <!-- seat booking -->
+        <div class="bg-white mt-7 p-8 rounded-3xl flex">
+          <!-- first column -->
+          <div
+            id="first-col"
+            class="w-[645px] border-r-2 border-gray-950 border-opacity-30 border-dashed pr-8">
+            <div class="border-b border-gray-950 border-opacity-20 border-dashed pb-6">
+              <span class="text-base-black text-2xl font-semibold">Select Your Seat</span>
+            </div>
+
+            <div
+              class="flex justify-between border-b border-gray-950 border-opacity-20 border-dashed py-6 text-lg font-medium font-['Inter'] text-base-black text-opacity-50">
+              <span class="flex items-center gap-3">
+                <img src="assets/images/seat-gray.png" alt="" /> Available</span
+              >
+              <span class="flex items-center gap-3 text-primary-700">
+                <img src="assets/images/seat-green-filled.png" alt="" /> Selected</span
+              >
+            </div>
+
+            <div class="flex justify-end">
+              <div class="py-3 px-10 bg-[rgba(3,7,18,0.10)] rounded-xl mt-6">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none">
+                  <path
+                    d="M16 28C14.4241 28 12.8637 27.6896 11.4078 27.0866C9.95189 26.4835 8.62902 25.5996 7.51472 24.4853C6.40042 23.371 5.5165 22.0481 4.91345 20.5922C4.31039 19.1363 4 17.5759 4 16C4 14.4241 4.31039 12.8637 4.91345 11.4078C5.5165 9.95189 6.40042 8.62902 7.51472 7.51472C8.62902 6.40042 9.95189 5.5165 11.4078 4.91345C12.8637 4.31039 14.4241 4 16 4C17.5759 4 19.1363 4.31039 20.5922 4.91345C22.0481 5.5165 23.371 6.40042 24.4853 7.51472C25.5996 8.62902 26.4835 9.95189 27.0866 11.4078C27.6896 12.8637 28 14.4241 28 16C28 17.5759 27.6896 19.1363 27.0866 20.5922C26.4835 22.0481 25.5996 23.371 24.4853 24.4853C23.371 25.5996 22.0481 26.4835 20.5922 27.0866C19.1363 27.6896 17.5759 28 16 28ZM16 28V18.6667M13.3333 16C13.3333 16.7072 13.6143 17.3855 14.1144 17.8856C14.6145 18.3857 15.2928 18.6667 16 18.6667M13.3333 16C13.3333 15.2928 13.6143 14.6145 14.1144 14.1144C14.6145 13.6143 15.2928 13.3333 16 13.3333C16.7072 13.3333 17.3855 13.6143 17.8856 14.1144C18.3857 14.6145 18.6667 15.2928 18.6667 16M13.3333 16L4.33333 13.3333M16 18.6667C16.7072 18.6667 17.3855 18.3857 17.8856 17.8856C18.3857 17.3855 18.6667 16.7072 18.6667 16M18.6667 16L27.6667 13.3333"
+                    stroke="#030712"
+                    stroke-opacity="0.7"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </div>
+            </div>
+            <div class="flex gap-[66px] mt-8">
+              <div class="grid gap-8 grid-cols-[1fr_3fr_3fr] flex-1">
+                <div class="h-14 bg-white flex items-center justify-center">A</div>
+                <div
+                  class="seatNumber h-14 bg-[#F7F8F8] rounded-xl flex items-center justify-center cursor-pointer hover:bg-primary-700 hover:text-white">
+                  A1
+                </div>
+                <div
+                  class="seatNumber h-14 bg-[#F7F8F8] rounded-xl flex items-center justify-center cursor-pointer hover:bg-primary-700 hover:text-white">
+                  A2
+                </div>
+                <div class="h-14 bg-white flex items-center justify-center">B</div>
+                <div
+                  class="seatNumber h-14 bg-[#F7F8F8] rounded-xl flex items-center justify-center cursor-pointer hover:bg-primary-700 hover:text-white">
+                  B1
+                </div>
+                <div
+                  class="seatNumber h-14 bg-[#F7F8F8] rounded-xl flex items-center justify-center cursor-pointer hover:bg-primary-700 hover:text-white">
+                  B2
+                </div>
+              </div>
+              <div class="grid gap-8 grid-cols-[1fr_1fr] flex-1">
+                <div
+                  class="seatNumber h-14 bg-[#F7F8F8] rounded-xl flex items-center justify-center cursor-pointer hover:bg-primary-700 hover:text-white">
+                  A3
+                </div>
+                <div
+                  class="seatNumber h-14 bg-[#F7F8F8] rounded-xl flex items-center justify-center cursor-pointer hover:bg-primary-700 hover:text-white">
+                  A4
+                </div>
+                <div
+                  class="seatNumber h-14 bg-[#F7F8F8] rounded-xl flex items-center justify-center cursor-pointer hover:bg-primary-700 hover:text-white">
+                  B3
+                </div>
+                <div
+                  class="seatNumber h-14 bg-[#F7F8F8] rounded-xl flex items-center justify-center cursor-pointer hover:bg-primary-700 hover:text-white">
+                  B4
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2nd column -->
+          <div id="2nd-col" class="pl-8">
+            <h1>2nd column</h1>
+          </div>
+        </div>
       </section>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
