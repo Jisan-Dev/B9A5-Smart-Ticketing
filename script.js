@@ -28,7 +28,7 @@ for (let seat of seats) {
         document.getElementById('modalOpenerBtn').classList.remove('cursor-pointer');
         document
           .getElementById('modalOpenerBtn')
-          .classList.add('text-gray-600', 'cursor-not-allowed', 'bg-gray-300');
+          .classList.add('text-gray-600', 'cursor-not-allowed', 'bg-gray-300', 'pointer-events-none');
       }
       return;
     }
@@ -53,6 +53,7 @@ for (let seat of seats) {
       totalPrice.innerText = totalPriceCount;
       document.getElementById('grandPrice').innerText = totalPriceCount;
 
+      document.getElementById('modalOpenerBtn').classList.remove('pointer-events-none');
       document
         .getElementById('modalOpenerBtn')
         .classList.add('text-white', 'bg-primary-700', 'cursor-pointer');
