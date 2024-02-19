@@ -65,7 +65,7 @@
               <li><a>Search</a></li>
             </ul>
           </div>
-          <a class="text-4xl sm:text-4xl font-extrabold relative leading-normal">P-Ticket</a>
+          <a class="text-3xl sm:text-4xl font-extrabold relative leading-normal">P-Ticket</a>
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1 text-base font-medium">
@@ -90,7 +90,7 @@
           class="min-h-[82vh] flex items-center justify-center bg-blend-multiply bg-gray-300 bg-[url('/assets/images/banner.png')] bg-no-repeat bg-cover bg-center rounded-[2rem]">
           <div class="hero-content text-center">
             <div class="leading-none">
-              <h1 class="text-white font-extrabold text-[4rem] tracking-tight">
+              <h1 class="text-white font-extrabold text-[3rem] sm:text-[4rem] tracking-tight">
                 End-to-End Travel with <br /><span class="text-primary-700">P Paribahan</span>
               </h1>
               <p class="py-6 max-w-[43.125rem] text-white leading-normal">
@@ -99,7 +99,7 @@
               </p>
               <a
                 href="#mainTicket"
-                class="bg-primary-700 text-base-black text-xl font-bold border-none px-8 py-5 rounded-xl inline-block">
+                class="bg-primary-700 text-base-black text-lg sm:text-xl font-bold border-none px-6 sm:px-8 py-4 sm:py-5 rounded-xl inline-block">
                 Buy Tickets
               </a>
             </div>
@@ -109,40 +109,55 @@
 
       <!-- Best offers / coupon info -->
       <section class="xl:max-w-[81.25%] max-w-[96%] mx-auto">
-        <h2 class="text-center text-gray-950 text-[40px] font-bold mt-28">Best offers for you</h2>
+        <h2 class="text-center text-gray-950 text-4xl sm:text-[40px] font-bold mt-28">
+          Best offers for you
+        </h2>
         <!-- new15 -->
-        <div class="flex gap-6 my-8 items-center justify-center">
-          <div class="bg-yellow-400 flex items-center justify-center w-[573px] rounded-3xl px-11">
+        <div class="flex flex-col sm:flex-row gap-6 my-8 items-center justify-center">
+          <div
+            class="bg-yellow-400 flex items-center justify-center w-full sm:w-[573px] rounded-3xl px-3 sm:px-11">
             <div class="font-[inter] flex-1">
-              <h2 class="text-gray-950 text-opacity-80 text-[40px] leading-9 font-black">15% OFF</h2>
-              <p class="text-gray-950 text-opacity-80 text-xl font-semibold leading-9">
+              <h2 class="text-gray-950 text-opacity-80 text-4xl sm:text-[40px] leading-9 font-black">
+                15% OFF
+              </h2>
+              <p
+                class="text-gray-950 text-opacity-80 text-lg sm:text-xl font-semibold sm:leading-9 max-sm:my-2">
                 on your next purchase
               </p>
-              <p class="text-gray-950 text-opacity-50 text-lg font-medium leading-9">
+              <p class="text-gray-950 text-opacity-50 text-lg font-medium leading-none sm:leading-9">
                 use by January 2024
               </p>
             </div>
-            <img src="assets/images/cupon-devider.png" alt="" />
+            <img src="assets/images/cupon-devider.png" class="max-sm:-ml-5 max-sm:h-44" alt="" />
             <div class="">
               <h2 class="text-gray-950 text-[32px] font-bold leading-[57.60px]">NEW15</h2>
               <p class="text-gray-950 text-opacity-40 text-xl font-medium leading-9">Coupon Code</p>
             </div>
           </div>
           <!-- couple 20 -->
-          <div class="bg-red-300 flex items-center justify-between w-[573px] rounded-3xl px-11">
-            <div class="font-[inter] flex-1">
-              <h2 class="text-gray-950 text-opacity-80 text-[40px] leading-9 font-black">20% OFF</h2>
-              <p class="text-gray-950 text-opacity-80 text-xl font-semibold leading-9">
-                on your next purchase
+          <div
+            class="bg-red-300 flex items-center justify-between w-full sm:w-[573px] rounded-3xl px-3 sm:px-11">
+            <div class="font-[inter] sm:flex-1">
+              <h2 class="text-gray-950 text-opacity-80 text-4xl sm:text-[40px] leading-9 font-black">
+                20% OFF
+              </h2>
+              <p
+                class="text-gray-950 text-opacity-80 text-lg sm:text-xl font-semibold sm:leading-9 max-sm:my-2">
+                on your next<br />
+                purchase
               </p>
-              <p class="text-gray-950 text-opacity-50 text-lg font-medium leading-9">
+              <p class="text-gray-950 text-opacity-50 text-lg font-medium leading-none sm:leading-9">
                 use by January 2024
               </p>
             </div>
-            <img src="assets/images/cupon-devider.png" alt="" />
+            <img src="assets/images/cupon-devider.png" class="max-sm:-ml-5 max-sm:h-44" alt="" />
             <div class="">
-              <h2 class="text-gray-950 text-[32px] font-bold leading-[57.60px]">Couple 20</h2>
-              <p class="text-gray-950 text-opacity-40 text-xl font-medium leading-9">Coupon Code</p>
+              <h2 class="text-gray-950 text-[27px] sm:text-[32px] font-bold sm:leading-[57.60px]">
+                Couple 20
+              </h2>
+              <p class="text-gray-950 text-opacity-40 text-lg sm:text-xl font-medium leading-9">
+                Coupon Code
+              </p>
             </div>
           </div>
         </div>
@@ -157,7 +172,7 @@
       <!-- Main ticketing section -->
       <section
         id="mainTicket"
-        class="bg-[#F7F8F8] min-h-screen rounded-tl-[88px] rounded-tr-[88px] border-t-2 border-primary-700 mt-[140px] px-[135px]">
+        class="bg-[#F7F8F8] min-h-screen rounded-tl-[88px] rounded-tr-[88px] border-t-2 border-primary-700 mt-[140px] sm:px-[135px]">
         <header class="text-center max-w-[736px] mx-auto mt-[120px] mb-12">
           <h2 class="text-base-black text-[40px] font-bold">P.H Paribahan</h2>
           <p>
@@ -166,10 +181,10 @@
           </p>
         </header>
         <main>
-          <div class="bg-white px-8 flex rounded-3xl">
-            <div id="first-col" class="w-3/4">
-              <div class="flex gap-4 py-8">
-                <img src="assets/images/bus-logo.png" class="object-contain" alt="" />
+          <div class="bg-white px-8 flex flex-col sm:flex-row rounded-3xl pb-8">
+            <div id="first-col" class="sm:w-3/4">
+              <div class="flex flex-col sm:flex-row gap-4 py-8 mb-10">
+                <img src="assets/images/bus-logo.png" class="object-contain max-sm:w-20" alt="" />
                 <div>
                   <h2 class="text-[32px] font-bold text-base-black">Greenline Paribahan</h2>
                   <p class="text-base-black text-opacity-60 text-lg font-normal">
@@ -198,17 +213,18 @@
                   >
                   <span class="text-base-black text-lg font-semibold">9:00 PM</span>
                 </div>
-                <div class="mt-6 font-[inter]">
+                <div
+                  class="mt-6 font-[inter] max-sm:flex max-sm:flex-col max-sm:gap-1 max-sm:items-center">
                   <span
                     class="p-5 bg-base-black bg-opacity-5 rounded-xl text-opacity-80 text-base-black text-base font-medium"
                     >Boarding Point - Laxmipur</span
                   >
                   <span
-                    class="p-5 bg-base-black bg-opacity-5 rounded-xl ml-4 text-opacity-80 text-base-black text-base font-medium"
+                    class="p-5 bg-base-black bg-opacity-5 rounded-xl sm:ml-4 text-opacity-80 text-base-black text-base font-medium"
                     >Dropping Point - Bogura</span
                   >
                   <span
-                    class="p-5 bg-base-black bg-opacity-5 rounded-xl ml-4 text-opacity-80 text-base-black text-base font-medium"
+                    class="p-5 bg-base-black bg-opacity-5 rounded-xl sm:ml-4 text-opacity-80 text-base-black text-base font-medium"
                     >Est. Time - 11 Hour</span
                   >
                 </div>
@@ -216,10 +232,15 @@
             </div>
 
             <!-- 2nd col -->
-            <img src="assets/images/info-devider.png" class="ml-4" alt="info-divider" />
+            <div>
+              <img
+                src="assets/images/info-devider.png"
+                class="sm:ml-4 max-sm:hidden"
+                alt="info-divider" />
+            </div>
 
             <!-- 3rd col -->
-            <div class="flex flex-col items-center justify-center">
+            <div class="flex flex-col items-center justify-center mt-3">
               <img src="assets/images/fare.png" alt="" />
               <p class="text-[32px] font-bold leading-10 text-base-black">550 Taka</p>
               <p class="text-base-black text-opacity-60 text-2xl font-semibold leading-10">Per Seat</p>
@@ -228,11 +249,11 @@
         </main>
 
         <!-- seat booking -->
-        <div class="bg-white mt-7 p-8 rounded-3xl flex">
+        <div class="bg-white mt-7 p-3 sm:p-8 rounded-3xl flex flex-col sm:flex-row">
           <!-- first column -->
           <div
             id="first-col"
-            class="w-[60%] border-r-2 border-gray-950 border-opacity-30 border-dashed pr-8">
+            class="w-full sm:w-[60%] sm:border-r-2 border-gray-950 border-opacity-30 border-dashed sm:pr-8">
             <div class="border-b border-gray-950 border-opacity-20 border-dashed pb-6">
               <span class="text-base-black text-2xl font-semibold">Select Your Seat</span>
             </div>
@@ -310,11 +331,11 @@
           </div>
 
           <!-- 2nd column -->
-          <div id="2nd-col" class="pl-8 w-[40%]">
+          <div id="2nd-col" class="sm:pl-8 w-full sm:w-[40%] max-sm:mt-8">
             <div class="border-b border-gray-950 border-opacity-20 border-dashed pb-6">
               <span class="text-base-black text-2xl font-semibold">Select Your Seat</span>
             </div>
-            <div class="bg-[#F7F8F8] p-8 mt-6">
+            <div class="bg-[#F7F8F8] p-4 sm:p-8 mt-6">
               <div
                 class="border-b border-gray-950 border-opacity-20 border-dashed pb-6 flex justify-between font-[inter]">
                 <p class="text-base-black text-base font-medium">
