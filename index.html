@@ -110,7 +110,7 @@
       <section class="xl:max-w-[81.25%] max-w-[96%] mx-auto">
         <h2 class="text-center text-gray-950 text-[40px] font-bold mt-28">Best offers for you</h2>
         <!-- new15 -->
-        <div class="flex gap-6 my-8">
+        <div class="flex gap-6 my-8 items-center justify-center">
           <div class="bg-yellow-400 flex items-center justify-center w-[573px] rounded-3xl px-11">
             <div class="font-[inter] flex-1">
               <h2 class="text-gray-950 text-opacity-80 text-[40px] leading-9 font-black">15% OFF</h2>
@@ -165,7 +165,7 @@
         </header>
         <main>
           <div class="bg-white px-8 flex rounded-3xl">
-            <div id="first-col">
+            <div id="first-col" class="w-3/4">
               <div class="flex gap-4 py-8">
                 <img src="assets/images/bus-logo.png" class="object-contain" alt="" />
                 <div>
@@ -230,7 +230,7 @@
           <!-- first column -->
           <div
             id="first-col"
-            class="w-[645px] border-r-2 border-gray-950 border-opacity-30 border-dashed pr-8">
+            class="w-[60%] border-r-2 border-gray-950 border-opacity-30 border-dashed pr-8">
             <div class="border-b border-gray-950 border-opacity-20 border-dashed pb-6">
               <span class="text-base-black text-2xl font-semibold">Select Your Seat</span>
             </div>
@@ -263,7 +263,7 @@
                 </svg>
               </div>
             </div>
-            <div class="flex gap-[66px] mt-8">
+            <div class="flex mt-8">
               <div class="grid gap-8 grid-cols-[1fr_3fr_3fr] flex-1">
                 <div class="h-14 bg-white flex items-center justify-center">A</div>
                 <div
@@ -284,7 +284,8 @@
                   B2
                 </div>
               </div>
-              <div class="grid gap-8 grid-cols-[1fr_1fr] flex-1">
+              <div class="grid gap-8 grid-cols-[1fr_3fr_3fr] flex-1">
+                <div></div>
                 <div
                   class="seatNumber h-14 bg-[#F7F8F8] rounded-xl flex items-center justify-center cursor-pointer hover:bg-primary-700 hover:text-white">
                   A3
@@ -293,6 +294,7 @@
                   class="seatNumber h-14 bg-[#F7F8F8] rounded-xl flex items-center justify-center cursor-pointer hover:bg-primary-700 hover:text-white">
                   A4
                 </div>
+                <div></div>
                 <div
                   class="seatNumber h-14 bg-[#F7F8F8] rounded-xl flex items-center justify-center cursor-pointer hover:bg-primary-700 hover:text-white">
                   B3
@@ -306,8 +308,47 @@
           </div>
 
           <!-- 2nd column -->
-          <div id="2nd-col" class="pl-8">
-            <h1>2nd column</h1>
+          <div id="2nd-col" class="pl-8 w-[40%]">
+            <div class="border-b border-gray-950 border-opacity-20 border-dashed pb-6">
+              <span class="text-base-black text-2xl font-semibold">Select Your Seat</span>
+            </div>
+            <div class="bg-[#F7F8F8] p-8 mt-6">
+              <div
+                class="border-b border-gray-950 border-opacity-20 border-dashed pb-6 flex justify-between font-[inter]">
+                <p class="text-base-black text-base font-medium">
+                  Seat
+                  <span id="badge-seatCheckedCount" class="bg-primary-700 px-2 text-sm rounded-full"
+                    >1</span
+                  >
+                </p>
+                <p class="text-base-black text-base font-medium -ml-12">Class</p>
+                <p class="text-base-black text-base font-medium">Price</p>
+              </div>
+              <div class="flex justify-between py-2">
+                <p>A1</p>
+                <p>Economy</p>
+                <p>550</p>
+              </div>
+              <div class="flex justify-between border-t border-gray-950 border-opacity-20 pt-3">
+                <p class="text-gray-950 text-base font-medium font-[Inter]">Total Price</p>
+                <p id="totalPrice" class="text-gray-950 text-base font-medium font-[Inter]">BDT 1100</p>
+              </div>
+              <label id="couponInputField" class="input input-bordered flex items-center gap-2 mt-4">
+                <input type="text" class="grow" placeholder="Have any coupon?" />
+                <span
+                  class="bg-primary-700 text-white py-2 px-4 rounded-lg ml-6 cursor-pointer font-semibold"
+                  >Apply</span
+                >
+              </label>
+              <div class="flex justify-between mt-3">
+                <p class="text-gray-950 text-base font-medium font-[Inter]">Grand Price</p>
+                <p id="totalPrice" class="text-gray-950 text-base font-medium font-[Inter]">BDT 1100</p>
+              </div>
+              <div
+                class="bg-primary-700 text-white text-xl font-extrabold rounded-2xl text-center py-4 mt-3 cursor-pointer">
+                Next
+              </div>
+            </div>
           </div>
         </div>
       </section>
