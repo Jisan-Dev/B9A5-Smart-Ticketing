@@ -20,6 +20,7 @@ for (let seat of seats) {
       seatNumberElem.parentNode.removeChild(seatNumberElem);
       totalPriceCount -= 550;
       totalPrice.innerText = totalPriceCount;
+      document.getElementById('grandPrice').innerText = totalPriceCount;
 
       if (document.getElementById('badge-seatCheckedCount').innerText === '0') {
         document.getElementById('modalOpenerBtn').classList.remove('text-white');
