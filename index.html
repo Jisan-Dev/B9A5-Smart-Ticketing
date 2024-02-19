@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="light" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -37,7 +37,7 @@
       }
     </style>
   </head>
-  <body class="font-raleway">
+  <body class="font-raleway scroll-smooth">
     <header class="xl:max-w-[81.25%] max-w-[96%] mx-auto lg:mb-5 lg:pt-5">
       <div class="navbar px-0 bg-base-100">
         <div class="navbar-start">
@@ -97,10 +97,11 @@
                 Yes, you can run unit tests and view the results directly within the app. The integrated
                 testing features allow for a streamlined .
               </p>
-              <button
-                class="bg-primary-700 text-base-black text-xl font-bold border-none px-8 py-5 rounded-xl">
+              <a
+                href="#mainTicket"
+                class="bg-primary-700 text-base-black text-xl font-bold border-none px-8 py-5 rounded-xl inline-block">
                 Buy Tickets
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -155,6 +156,7 @@
 
       <!-- Main ticketing section -->
       <section
+        id="mainTicket"
         class="bg-[#F7F8F8] min-h-screen rounded-tl-[88px] rounded-tr-[88px] border-t-2 border-primary-700 mt-[140px] px-[135px]">
         <header class="text-center max-w-[736px] mx-auto mt-[120px] mb-12">
           <h2 class="text-base-black text-[40px] font-bold">P.H Paribahan</h2>
@@ -334,6 +336,7 @@
               <label id="couponInputField" class="input input-bordered flex items-center gap-2 mt-4">
                 <input type="text" class="grow" placeholder="Have any coupon?" />
                 <span
+                  id="applyBtn"
                   class="bg-primary-700 text-white py-2 px-4 rounded-lg ml-6 cursor-pointer font-semibold"
                   >Apply</span
                 >
@@ -345,9 +348,33 @@
                 </p>
               </div>
               <div
-                class="bg-primary-700 text-white text-xl font-extrabold rounded-2xl text-center py-4 mt-3 cursor-pointer">
+                onclick="my_modal_2.showModal()"
+                id="modalOpenerBtn"
+                class="bg-gray-300 text-gray-600 text-xl font-extrabold rounded-2xl text-center py-4 mt-3 cursor-not-allowed">
                 Next
               </div>
+              <dialog id="my_modal_2" class="modal">
+                <div class="modal-box flex items-center justify-center flex-col py-12 min-w-[50%]">
+                  <img src="assets/images/success.png" alt="" />
+                  <h3 class="text-green-500 text-2xl font-bold text-center mt-9">SUCCESS</h3>
+                  <p class="text-base-black text-xl font-semibold text-center mt-9">
+                    Thank you for Booking Our Bus Seats. <br />
+                    We are working hard to find the best service and deals for you
+                  </p>
+                  <p class="text-neutral-600 text-xl font-medium text-center mt-4">
+                    Shortly you will find a confirmation in your email.
+                  </p>
+                  <form method="dialog">
+                    <button
+                      class="bg-[#27AE60] rounded-[32px] py-4 px-24 mt-4 outline-none text-white text-xl font-semibold">
+                      Continue
+                    </button>
+                  </form>
+                </div>
+                <form method="dialog" class="modal-backdrop">
+                  <button>close</button>
+                </form>
+              </dialog>
             </div>
           </div>
         </div>
